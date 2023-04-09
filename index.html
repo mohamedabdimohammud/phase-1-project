@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manchester United Fans</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#"id="homeBtn">Home</a></li>
+<li><a href="#" id="newsBtn">News</a></li>
+<li><a href="#"id="squadBtn">Squad</a></li>
+<li><a href="#"id="historyBtn">History</a></li>
+<li><a href="#"id="storeBtn">Store</a></li>
+</ul>
+</nav>
+<div class="hero-text">
+<h1>Manchester United</h1>
+<h2>The official fan website!</h2>
+</div>
+</header>
+<main>
+<section>
+<h2>Latest news</h2>
+<p>Manchester United defeat Liverpool 2-1 in the Premier League match.</p>
+</section>
+<section>
+<h2>Upcoming fixtures</h2>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Opponent</th>
+<th>Competition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May 12th</td>
+<td>Leeds United</td>
+<td>Premier League</td>
+</tr>
+<tr>
+<td>May 15th</td>
+<td>Everton</td>
+<td>Premier League</td>
+</tr>
+<tr>
+<td>May 26th</td>
+<td>Villarreal</td>
+<td>UEFA Europa League Final</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Club history</h2>
+<p>Manchester United was founded in 1878 as Newton Heath LYR Football Club, and changed its name to Manchester United in 1902. The club has won a record 20 league titles, 12 FA Cups, and 3 European Cups.</p>
+</section>
+<section>
+<h2>Club store</h2>
+<p>Visit our online store to buy official Manchester United merchandise.</p>
+</section>
+</main>
+<footer>
+<p>© Manchester United 2021. All rights reserved.</p>
+</footer>
+<script src="home.js"
+<script>
+      const newsBtn = document.querySelector('#newsBtn');
+      const squadBtn = document.querySelector('#squadBtn');
+      const historyBtn = document.querySelector('#historyBtn');
+      const storeBtn = document.querySelector('#storeBtn');
+
+      newsBtn.addEventListener('click', function() {
+        window.location.href = data.newsUrl;
+      });
+
+      squadBtn.addEventListener('click', function() {
+        window.location.href = data.squadUrl;
+      });
+
+      historyBtn.addEventListener('click', function() {
+        window.location.href = data.historyUrl;
+      });
+      storeBtn.addEventListener('click', function() {
+    window.location.href = data.storeUrl;
+      });
+
+  const data = {
+    newsUrl: "http://127.0.0.1:5500/news.html",
+    squadUrl: "http://127.0.0.1:5500/squad.html",
+    historyUrl: "http://127.0.0.1:5500/history.html",
+    storeUrl: "http://127.0.0.1:5500/store.html"
+  };
+</script>
+</body>
+</html>
